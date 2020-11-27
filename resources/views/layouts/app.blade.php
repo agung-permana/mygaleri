@@ -19,6 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('dist/css/lightbox.css') }}">
 </head>
 <body>
     <div id="app">
@@ -32,5 +33,7 @@
     </div>
 
     @include('layouts.footer')
+
+    <script src="{{ asset('dist/js/lightbox-plus-jquery.js') }}"></script>
 </body>
 </html>

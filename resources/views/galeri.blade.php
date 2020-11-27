@@ -15,7 +15,10 @@
             @foreach ($galeri as $item)
             <div class="col-md-4">
                 <div class="card mt-4">
+                  <a href="{{ asset('images/'.$item->gambar) }}"
+                    data-lightbox="image-1" data-title="{{ $item->keterangan }}">
                     <img src="{{ asset('images/'.$item->gambar)}}" class="card-img-top" alt="" style="height: 230px">
+                    </a>
                     <div class="card-body">
                         <h6 class="card-text">{{ $item->nama_album }}</h6>
                         <p>{{ $item->nama_galeri }}</p>
